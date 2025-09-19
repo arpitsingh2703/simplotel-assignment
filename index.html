@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Food Landing Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul id="nav-links">
+        <li>Home</li>
+        <li>Order</li>
+        <li>Food</li>
+        <li>Restaurant</li>
+        <li>Testimonials</li>
+        <li>Contact Us</li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+          est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+          euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam
+          ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec
+          justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta
+          viverra.
+        </p>
+        <button>Click Me</button>
+      </div>
+      <div class="hero-img-box">
+        <img src="./img/pexels-robin-stickel-70497.jpg" alt="Burger & Fries" />
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <div class="gallery-left">
+        <div class="gallery-left-col">
+          <img src="./img/pexels-rachel-claire-6752433.jpg" alt="Street Sign" />
+          <img src="./img/pexels-eva-bronzini-6141651.jpg" alt="Outdoor Cafe" />
+        </div>
+        <div class="gallery-left-col">
+          <img src="./img/pexels-mister-mister-3434523.jpg" alt="Food Table" />
+        </div>
+      </div>
+      <div class="gallery-right">
+        <div class="text-box">
+          <span>LOREM IPSUM</span>
+          <h2>LOREM IPSUM SET ADEMIR</h2>
+          <a href="#">Click &#10132;</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        if (navLinks.style.display === "flex") {
+          navLinks.style.display = "none";
+        } else {
+          navLinks.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>
